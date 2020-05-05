@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- External Style Sheet -->
+<link rel="stylesheet" type="text/css" href="day-4.css">
+ <!-- Internal CSS -->
+<style>
+* {
+  padding: 0;  
+}
+/*
+    id selector
+*/ 
+#header {
+    text-align: left;
+    color: blue;
+    font-family: cursive;
+}
+#para1 {
+  text-align: center;
+  color: red;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: blue;
+}
+
+/*
+    Grouping Example
+*/
+h1 h2 p {
+  text-align: center;
+  color: red;
+}
+
+/*
+    class selectors
+*/ 
+.paragraph {
+    color: brown;
+}
+
+h1.paragraph {
+    color: #8a2be2;
+}
+
+</style>
+</head>
+<!--
+    Different types of selectors
+     Element Selector - h1 , p all the html element.
+     id Selector - define a unique id to a HTML element as an attribute
+     class selector - can be given to multiple html classes 
+    id > classname > element selectors 
+    inline stylesheet > Internal Sheet > external stylesheet
+-->
+<body>
+ <div class="container">
+    <h1 style="color:chartreuse" class="paragraph">Welcome</h1>    
+    <h1 id="header">Web Tutorial</h1>
+    <p id="para1">this is paragraph 1</p>
+    <p class="paragraph">this is paragraph 2</p>
+    
+    <div style="color: violet">
+        <p style="color:red">
+            style dasdsadas
+        </p>
+        <p>sdadada</p>
+    </div>
+    <p >this is paragraph 3</p>
+    <p class="paragraph">This paragraph 4</p>
+ </div>   
+<!-- Inline Stylesheet -->    
+
+</body>
+</html>
